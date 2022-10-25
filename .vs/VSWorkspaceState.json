@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.github",
+    "\\.github\\workflows",
+    "\\ArmTemplates"
+  ],
+  "SelectedNode": "\\.github\\workflows\\devops-starter-workflow.yml",
+  "PreviewInSolutionExplorer": false
+}
