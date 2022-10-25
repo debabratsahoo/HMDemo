@@ -1,0 +1,21 @@
+{
+  "id": "P5",
+  "productName": "TEST",
+  "productYear": 2022,
+  "channelId": 2,
+  "sizeScaleId": "1XXL",
+  "articles": [
+    {
+      "colorId": "TESTCOLOR1",
+      "id": "P5"
+    },
+    {
+      "colorId": "TESTCOLOR2",
+      "id": "P5"
+    },
+    {
+      "colorId": "TESTCOLOR3",
+      "id": "P5"
+    }
+  ]
+}
