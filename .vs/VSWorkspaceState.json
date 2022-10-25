@@ -3,8 +3,10 @@
     "",
     "\\.github",
     "\\.github\\workflows",
+    "\\Application",
+    "\\Application\\HM.Product.API",
     "\\ArmTemplates"
   ],
-  "SelectedNode": "\\.github\\workflows\\devops-starter-workflow.yml",
+  "SelectedNode": "\\HMDemo.sln",
   "PreviewInSolutionExplorer": false
 }

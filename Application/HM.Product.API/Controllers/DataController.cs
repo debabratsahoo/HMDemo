@@ -1,9 +1,11 @@
 using HM.Product.Data;
 using HM.Product.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HM.Product.API.Controllers
 {
+    //[Authorize]
     [ApiController]
     [Route("api")]
     public class DataController : ControllerBase
@@ -69,15 +71,5 @@ namespace HM.Product.API.Controllers
             var y = await _articleRepository.GetAll(g => 1 == 1);
             return x.Select(g => new ProductDB { Id = g.Id, ProductName = g.ProductName, Articles = g.Articles.ToList() }).ToList();
         }
-
-        //[HttpPost]
-        //[Route("LoadData")]
-        //public async Task<bool> LoadTestData()
-        //{
-        //    var tempData = new List<ProductDB> {
-        //    new ProductDB{ Id = "TEST1", ProductName = "TEST", ChannelId = 1, SizeScaleId = "SIZETEST1", ProductCode = "2022001", ProductYear = 2022, Articles = new List<ArticleDB> { new ArticleDB { Id = "TEST1", ArticleId = "ARTICLETEST1", ColorId = "COLORTEST123" }, new ArticleDB { Id = "TEST1", ArticleId = "ARTICLETEST2", ColorId = "COLORTEST1" }, new ArticleDB { Id = "TEST1", ArticleId = "ARTICLETEST3", ColorId = "COLORTEST3" } } }
-        //    };
-        //    return await _productRepository.Save(tempData[0]);
-        //}
     }
 }
